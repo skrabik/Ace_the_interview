@@ -1,27 +1,43 @@
-.body {
+html {
+    height: 100%;
+}
+
+body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    color: #fff;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
-.header {
-    background: blue;
-}
-.main {
-    flex-grow: 1;
-}
-.footer {
-    flex-shrink: 0;
+
+header {
     background: blue;
 }
 
+main {
+
+}
+
+.test {
+    margin:30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: black;
+}
+
+
 .select-button {
-    background: green;
+    border: 2px solid black;
     font-size: 15px;
     width:150px;
     height: 40px;
     border: none;
     border-radius: 3px;
+    margin: 10px;
 }
 
 .register-form {
