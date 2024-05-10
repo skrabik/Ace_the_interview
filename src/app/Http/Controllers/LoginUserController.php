@@ -10,7 +10,10 @@ class LoginUserController extends Controller
 {
     public function LoginView (Request $request) 
     {
-        return view('LoginUser', ['request' => $request]);
+        return view('LoginUser', [
+            'request' => $request,
+            'title' => 'Вход'
+        ]);
     }
 
     public function Login (Request $request) 

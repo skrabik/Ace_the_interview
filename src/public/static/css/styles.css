@@ -4,8 +4,6 @@ html {
 
 body {
     margin: 0;
-    color: #fff;
-    /* Растягиваем body по высоте html */
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -17,6 +15,11 @@ header {
 
 main {
 
+}
+
+a {
+    text-decoration: None;
+    color: black;
 }
 
 .test {
@@ -48,4 +51,12 @@ footer {
 .input-field {
     width: 120px;
     height: 30px;
+}
+
+.question-block {
+    background: #ffff;
+}
+
+.question-block:hover {
+    background-color: grey;
 }

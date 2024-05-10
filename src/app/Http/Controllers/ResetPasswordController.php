@@ -11,7 +11,10 @@ class ResetPasswordController extends Controller
 {
     public function  ResetView (Request $request)
     {
-        return view('ResetPasswordView', ['request' => $request]);    
+        return view('ResetPasswordView', [
+            'request' => $request,
+            'title' => 'Сброс пароля'
+        ]);    
     }
 
     public function Reset (Request $request)

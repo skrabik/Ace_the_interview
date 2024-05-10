@@ -13,6 +13,9 @@ class MainController extends Controller
     {
         $categories = Categories::all();
 
-        return view('WelcomePage', ['categories' => $categories]);
+        return view('WelcomePage', [
+            'categories' => $categories,
+            'title' => 'Главная страница'
+        ]);
     }
 }

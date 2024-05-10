@@ -16,7 +16,7 @@
 
     <div class=test>
     @foreach($categories as $category)
-        <button class='select-button'>{{ $category->name }}</button> 
+        <a href='{{ route('questionslist', $category->name) }}'><button class='select-button'>{{ $category->name }}</button></a>
     @endforeach
     <div>
 

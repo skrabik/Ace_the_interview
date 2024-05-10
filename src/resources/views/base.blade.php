@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WelcomePage</title>
+        <title>{{ $title }}</title>
         <link rel="stylesheet" href="{{ asset('/static/css/styles.css') }}">
     </head>
     <body>

@@ -9,7 +9,9 @@ class ForgotPasswordController extends Controller
 {
     public function ForgotPasswordView () 
     {
-        return view('forgotpassword');
+        return view('forgotpassword', [
+            'title' => 'Сброс пароля'
+        ]);
     }
 
     public function ForgotPassword (Request $request) 

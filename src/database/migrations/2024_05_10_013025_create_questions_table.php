@@ -12,8 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('questions', function (Blueprint $table) {
+            
             $table->id();
+            $table->integer('category_id')->nullable();
+            $table->text('category_name')->nullable();
+            $table->text('question')->nullable();
+            $table->text('answer')->nullable();
+            $table->text('tags')->nullable();
+            $table->text('liks')->nullable();
+            $table->text('author')->nullable();
+            $table->boolean('protected')->default(True);
             $table->timestamps();
+
         });
     }
 

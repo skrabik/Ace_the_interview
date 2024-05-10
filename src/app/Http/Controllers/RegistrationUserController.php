@@ -11,7 +11,9 @@ class RegistrationUserController extends Controller
 {
     public function RegistrationView () 
     {
-        return view('RegisterUser');
+        return view('RegisterUser', [
+            'title' => 'Регистрация '
+        ]);
     }
 
     public function Registration (Request $request) 
